@@ -207,13 +207,13 @@ def key_event(window, key, scancode, action, mods):
             print("RIGHT")
         elif key == glfw.KEY_LEFT:
             cam_angle_xz+=0.4
-            print("RIGHT")
+            print("LEFT")
         elif key == glfw.KEY_UP:
             cam_angle_xy+=0.4
-            print("RIGHT")
+            print("UP")
         elif key == glfw.KEY_DOWN:
             cam_angle_xy-=0.4
-            print("RIGHT")
+            print("DOWN")
     camera.x=cam_radius * (math.cos(cam_angle_xz))
     camera.y=cam_radius * (math.sin(cam_angle_xy))
     camera.z=cam_radius * (math.sin(cam_angle_xz))
